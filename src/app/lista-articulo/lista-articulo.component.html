@@ -1,0 +1,65 @@
+<br />
+
+<div>
+  <h1 class="text-center">Inventario de Articulos</h1>
+</div>
+
+<nav class="navbar navbar-expand-sm">
+  <ul class="navbar-ul">
+    <li class="nav-item">
+      <button (click)="crear()" class="btn btn-info">+1</button>
+    </li>
+    <br />
+    <li class="nav-item">
+      <button (click)="analiticas()"  class="btn btn-danger">Analiticas</button>
+    </li>
+  </ul>
+</nav>
+
+<br/>
+
+<div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+ <br/> 
+
+ <div class="container">
+<div class="card">
+    <div class="card-body">  
+<h2 class="text-center">Lista de los articulos</h2>
+<table class="table table-striped"> 
+        <thead class="table-dark">
+        <tr>
+            <th>Cod_Barras</th>
+            <th>Descripcion</th>
+            <th>Clasificacion</th>
+            <th>Id_Unidad</th>
+            <th>Id_Proveedor</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let articulo of articulos">
+          <th>{{articulo.cod_barras}}</th>
+          <th>{{articulo.descripcion}}</th>
+          <th>{{articulo.id_clasificacion}}</th>
+          <th>{{articulo.id_unidad}}</th>
+          <th>{{articulo.id_proveedor}}</th>
+          <td>
+            <button (click)="actualizarArticulo(articulo.cod_barras)" class="btn btn-info">Actualizar</button>
+            <button (click)="eliminarArticulo(articulo.cod_barras)" class="btn btn-danger">Eliminar</button>
+          </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>

@@ -1,0 +1,60 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Actualizar Articulo</h3>
+    <form (ngSubmit)="onSubmit()">
+       <div class="form-group">
+            <label>Cod_barras</label>
+            <input type="text" class="form-control" id="cod_barras" [(ngModel)]="articulo.cod_barras" name="cod_barras">         
+            <label>Cod_asociado</label>
+            <input type="text" class="form-control" id="cod_asociado" [(ngModel)]="articulo.cod_asociado" name="cod_asociado">  
+            <label>id_clasificacion</label>
+            <input type="text" class="form-control" id="id_clasificacion" [(ngModel)]="articulo.id_clasificacion" name="id_clasificacion">
+            <label>cod_interno</label>
+            <input type="text" class="form-control" id="cod_interno" [(ngModel)]="articulo.cod_interno" name="cod_interno">
+            <label>descripcion</label>
+            <input type="text" class="form-control" id="descripcion" [(ngModel)]="articulo.descripcion" name="descripcion">
+            <label>descripcion_corta</label>
+            <input type="text" class="form-control" id="descripcion_corta" [(ngModel)]="articulo.descripcion_corta" name="descripcion_corta">
+            <label>cantidad_um</label>
+            <input type="text" class="form-control" id="cantidad_um" [(ngModel)]="articulo.cantidad_um" name="cantidad_um">
+            <label>id_unidad</label>
+            <input type="text" class="form-control" id="id_unidad" [(ngModel)]="articulo.id_unidad" name="id_unidad">
+            <label>id_proveedor</label>
+            <input type="text" class="form-control" id="id_proveedor" [(ngModel)]="articulo.id_proveedor" name="id_proveedor">
+            <label>precio_compra</label>
+            <input type="text" class="form-control" id="precio_compra" [(ngModel)]="articulo.precio_compra" name="precio_compra">
+            <label>utilidad</label>
+            <input type="text" class="form-control" id="utilidad" [(ngModel)]="articulo.utilidad" name="utilidad">
+            <label>precio_venta</label>
+            <input type="text" class="form-control" id="precio_venta" [(ngModel)]="articulo.precio_venta" name="precio_venta">
+            <label>tipo_articulo</label>
+            <input type="text" class="form-control" id="tipo_articulo" [(ngModel)]="articulo.tipo_articulo" name="tipo_articulo">
+            <label>stock</label>
+            <input type="text" class="form-control" id="stock" [(ngModel)]="articulo.stock" name="stock">
+            <label>stock_min</label>
+            <input type="text" class="form-control" id="stock_min" [(ngModel)]="articulo.stock_min" name="stock_min">
+            <label>stock_max</label>
+            <input type="text" class="form-control" id="stock_max" [(ngModel)]="articulo.stock_max" name="stock_max">
+            <label>iva</label>
+            <input type="text" class="form-control" id="iva" [(ngModel)]="articulo.iva" name="iva">
+            <label>kit_fecha_ini</label>
+            <input type="text" class="form-control" id="kit_fecha_ini" [(ngModel)]="articulo.kit_fecha_ini" name="kit_fecha_ini">
+            <label>kit_fecha_fin</label>
+            <input type="text" class="form-control" id="kit_fecha_fin" [(ngModel)]="articulo.kit_fecha_fin" name="kit_fecha_fin">
+            <label>articulo_disponible</label>
+            <input type="text" class="form-control" id="articulo_disponible" [(ngModel)]="articulo.articulo_disponible" name="articulo_disponible">
+            <label>kit</label>
+            <input type="text" class="form-control" id="kit" [(ngModel)]="articulo.kit" name="kit">
+            <label>fecha_registro</label>
+            <input type="text" class="form-control" id="fecha_registro" [(ngModel)]="articulo.fecha_registro" name="fecha_registro">
+            <label>visible</label>
+            <input type="text" class="form-control" id="visible" [(ngModel)]="articulo.visible" name="visible">
+            <label>puntos</label>
+            <input type="text" class="form-control" id="puntos" [(ngModel)]="articulo.puntos" name="puntos">
+            <label>last_update_inventory</label>
+            <input type="text" class="form-control" id="last_update_inventory" [(ngModel)]="articulo.last_update_inventory" name="last_update_inventory">
+            <label>cve_producto</label>
+            <input type="text" class="form-control" id="cve_producto" [(ngModel)]="articulo.cve_producto" name="cve_producto">
+       </div>
+       <button class="btn btn-success">Guardar</button>
+    </form>
+  </div>
